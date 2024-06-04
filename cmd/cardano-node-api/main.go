@@ -119,6 +119,5 @@ func main() {
 		logger.Fatalf("failed to start gRPC: %s", err)
 	}
 
-	// Wait forever
 	select {}
 }
