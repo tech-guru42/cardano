@@ -82,9 +82,7 @@ func Start(cfg *config.Config) error {
 	// Metrics
 	metricsRouter := gin.New()
 	metrics := ginmetrics.GetMonitor()
-	// Set metrics path
 	metrics.SetMetricPath("/")
-	// Set metrics router
 	metrics.Expose(metricsRouter)
 	// Use metrics middleware without exposing path in main app router
 	// We only collect metrics on the API endpoints
