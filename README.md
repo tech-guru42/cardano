@@ -9,7 +9,6 @@ the underlying Node-to-Client (NtC) Ouroboros mini-protocols to clients via
 a REST API or UTxO RPC gRPC API.
 
 ## Usage
-
 The recommended method of using this application is via the published
 container images, coupled with Blink Labs container images for the Cardano
 Node.
