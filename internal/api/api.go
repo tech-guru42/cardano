@@ -90,7 +90,6 @@ func Start(cfg *config.Config) error {
 	// We only collect metrics on the API endpoints
 	metrics.UseWithoutExposingEndpoint(apiGroup)
 
-	// Start metrics listener
 	go func() {
 		// TODO: return error if we cannot initialize metrics
 		logger.Infof("starting metrics listener on %s:%d",
